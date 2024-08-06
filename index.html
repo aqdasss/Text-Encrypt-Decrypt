@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption and Decryption</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encryption and Decryption</h1>
+        <div class="sections">
+            <div class="encryption-section">
+                <h2>Encryption</h2>
+                <div class="input-group">
+                    <label for="encrypt-input-text">Enter Text:</label>
+                    <textarea id="encrypt-input-text" rows="4" cols="50"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="encrypt-key">Key:</label>
+                    <input type="text" id="encrypt-key">
+                </div>
+                <div class="buttons">
+                    <button onclick="encrypt()">Encrypt</button>
+                </div>
+                <div class="output-group">
+                    <h2>Encrypted Output:</h2>
+                    <p id="encrypt-output-text"></p>
+                </div>
+            </div>
+            <div class="decryption-section">
+                <h2>Decryption</h2>
+                <div class="input-group">
+                    <label for="decrypt-input-text">Enter Encrypted Text:</label>
+                    <textarea id="decrypt-input-text" rows="4" cols="50"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="decrypt-key">Key:</label>
+                    <input type="text" id="decrypt-key">
+                </div>
+                <div class="buttons">
+                    <button onclick="decrypt()">Decrypt</button>
+                </div>
+                <div class="output-group">
+                    <h2>Decrypted Output:</h2>
+                    <p id="decrypt-output-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
